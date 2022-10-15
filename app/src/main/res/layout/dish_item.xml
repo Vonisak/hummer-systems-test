@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="16dp">
+
+    <View
+        android:id="@+id/delimiter_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/ic_dish_delimiter_line"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/dish_test"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/delimiter_line"
+        app:layout_constraintEnd_toStartOf="@id/name"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/dish_name_color"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/image"
+        app:layout_constraintTop_toTopOf="@id/image"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Ветчина и грибы" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/sf_ui_display_regular"
+        android:textColor="@color/dish_description_color"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/name"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        tools:text="Ветчина,шампиньоны, увеличинная порция моцареллы, томатный соус" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="87dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="@id/description"
+        app:layout_constraintTop_toBottomOf="@id/description"
+        app:strokeColor="@color/main_color"
+        app:strokeWidth="1dp">
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:fontFamily="@font/sf_ui_display_regular"
+            tools:text="от 345 р"
+            android:textColor="@color/main_color"
+            android:textSize="13sp" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

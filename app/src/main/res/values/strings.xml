@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Dodo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="bottom_nav_menu_title">Меню</string>
+    <string name="bottom_nav_profile_title">Профиль</string>
+    <string name="bottom_nav_basket_title">Корзина</string>
+    <string name="toolbar_menu_qr_code_title">QR-код</string>
+
+    <string name="category_pizza">Пицца</string>
+    <string name="category_snacks">Закуски</string>
+    <string name="category_desserts">Десерты</string>
+    <string name="category_drinks">Напитки</string>
+
+    <string-array name="towns">
+        <item>Москва</item>
+        <item>Санкт-Петербург</item>
+        <item>Воронеж</item>
+        <item>Владивосток</item>
+        <item>Новосибирск</item>
+    </string-array>
+</resources>

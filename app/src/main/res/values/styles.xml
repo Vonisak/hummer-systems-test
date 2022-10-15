@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="ChipCategoryStyle" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="fontFamily">@font/sf_ui_display_semibold</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">13sp</item>
+        <item name="chipCornerRadius">6dp</item>
+        <item name="android:textColor">@color/category_text_color</item>
+        <item name="android:elevation">1dp</item>
+        <item name="chipBackgroundColor">@color/category_back_color</item>
+    </style>
+</resources>
